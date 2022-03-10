@@ -6,6 +6,43 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+.Load
+{
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.Load div
+{
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 50%;
+  margin: 0 5px;
+  animation-name: up-and-Load;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+}
+.Load .Two
+{
+  animation-delay: 0.3s;
+}
+.Load.Three
+{
+  animation-delay: 0.6s;
+
+}
+
+@keyframes up-and-Load
+{
+  to
+  {
+    opacity: 0.2s;
+    transform: translateY(-20px);
+}
+}
 header
 {
   background-color: white;
@@ -50,9 +87,6 @@ section
   display: flex;
   align-items: center;
   background-color: black;
-  background:url(./Logo.jpg) no-repeat;
-  background-size: cover;
-  background-position-y: px;
 }
 .Main h2
 {
@@ -90,10 +124,6 @@ section
 {
   background-color: #0a49f6;
   transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
 }
 .Social-Icons a
 {
@@ -104,9 +134,6 @@ section
   margin-left: 10px;
   transition: 0.9s ease;
   -webkit-transition: 0.9s ease;
-  -moz-transition: 0.9s ease;
-  -ms-transition: 0.9s ease;
-  -o-transition: 0.9s ease;
 }
 .Social-Icons a:hover
 {
